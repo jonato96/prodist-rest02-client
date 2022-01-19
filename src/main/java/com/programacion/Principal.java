@@ -14,7 +14,7 @@ public class Principal {
         //HttpClient cliente = new HttpClient();
         //JaxrsClient cliente = new JaxrsClient();
         ServicioPersonaClient cliente = ProxyClient.create();
-        
+
         //Crear dos clientes
         PersonaClient nuevo  = new PersonaClient(3, "Joselo", "Cuenca");
         PersonaClient nuevo01  = new PersonaClient(4, "Perla", "Esmeraldas");

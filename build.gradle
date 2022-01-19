@@ -18,7 +18,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.1'
 
-    //CLIENTE JAXRS
+    //CLIENTE JAXRS y PROXY
     //https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-client
     implementation group: 'org.jboss.resteasy', name: 'resteasy-client', version: '4.7.5.Final'
     // https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jackson2-provider
