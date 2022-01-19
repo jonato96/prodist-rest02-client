@@ -3,12 +3,18 @@ package com.programacion;
 import com.programacion.db.PersonaClient;
 import com.programacion.httpclient.HttpClient;
 import com.programacion.jaxrsclient.JaxrsClient;
+import com.programacion.resteasyclient.ProxyClient;
+import com.programacion.resteasyclient.ServicioPersonaClient;
 
 public class Principal {
 
     public static void main(String[] args) throws Exception {
+        //Clientes
+
         //HttpClient cliente = new HttpClient();
-        JaxrsClient cliente = new JaxrsClient();
+        //JaxrsClient cliente = new JaxrsClient();
+        ServicioPersonaClient cliente = ProxyClient.create();
+        
         //Crear dos clientes
         PersonaClient nuevo  = new PersonaClient(3, "Joselo", "Cuenca");
         PersonaClient nuevo01  = new PersonaClient(4, "Perla", "Esmeraldas");
